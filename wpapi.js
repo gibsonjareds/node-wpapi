@@ -81,7 +81,7 @@ function WPAPI( options ) {
 	};
 
 	// If any authentication credentials were provided, assign them now
-	if ( options && ( options.username || options.password || options.nonce ) ) {
+	if ( options && ( options.username || options.password || options.nonce || options.token) ) {
 		this.auth( options );
 	}
 
